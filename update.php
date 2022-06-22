@@ -31,7 +31,7 @@
    <h1>Edit book</h1>
 
    <section>
-      <form action="edit.php" method="post" name="edit_form" autocomplete="on" >
+      <form action="editProcess.php" method="post" name="edit_form" autocomplete="on" >
          <main>
             <div>
                <h3>edit guest room</h3>
@@ -58,11 +58,17 @@
             </header>
 
             <header>
+               <label for="jumlah">Jumlah</label>
                <input type="number" name="jumlah" value="<?php echo $customer['jumlah'] ?>" required>
             </header>
-
+            
             <header>
-               <input type="submit" name="update" value="book">
+               <label for="harga">Harga</label>
+               <input type="text" name="harga" placeholder="Rp1.000.000" value="<?php echo $customer['harga'] ?>" maxlength="15" minlength="3" required>
+            </header>
+            
+            <header>
+               <input type="submit" name="update" value="Edit book">
             </header>
 
          </main>

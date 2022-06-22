@@ -8,7 +8,8 @@ CREATE TABLE user (
    datang         DATE NOT NULL,
    pulang         DATE NOT NULL,
    tipe           VARCHAR(50) NOT NULL,
-   jumlah         INT(5) NOT NULL
+   jumlah         INT(5) NOT NULL,
+   harga          INT(10) NOT NULL
 );
 
 INSERT INTO user (nama, datang, pulang, tipe, jumlah) VALUES

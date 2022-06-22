@@ -7,8 +7,9 @@
       $date_out = $_POST['pulang'];
       $type = $_POST['tipe'];
       $amount = $_POST['jumlah'];
+      $price = $_POST['harga'];
 
-      $sql = "INSERT INTO user (nama, datang, pulang, tipe, jumlah) VALUES ('$name', '$date_in', '$date_out', '$type', '$amount')";
+      $sql = "INSERT INTO user (nama, datang, pulang, tipe, jumlah, harga) VALUES ('$name', '$date_in', '$date_out', '$type', '$amount', '$price')";
       $query = mysqli_query($db, $sql);
 
       if ($query) {

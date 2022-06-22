@@ -8,8 +8,9 @@
       $check_out = $_POST['pulang'];
       $type = $_POST['tipe'];
       $amount = $_POST['jumlah'];
+      $price = $_POST['harga'];
 
-      $sql = "UPDATE user SET nama='$nama', datang='$check_in', pulang='$check_out', tipe='$type', jumlah='$amount' WHERE id=$id";
+      $sql = "UPDATE user SET nama='$nama', datang='$check_in', pulang='$check_out', tipe='$type', jumlah='$amount', harga='$price' WHERE id=$id";
       $query = mysqli_query($db, $sql);
 
       if ($query) {

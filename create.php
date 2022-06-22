@@ -32,8 +32,15 @@
                </select>
             </header>
 
+            
             <header>
+               <label for="jumlah">Jumlah</label>
                <input type="number" name="jumlah" required>
+            </header>
+            
+            <header>
+               <label for="harga">Harga</label>
+               <input type="number" name="harga" placeholder="Rp1.000.000" maxlength="15" minlength="3" required>
             </header>
 
             <header>

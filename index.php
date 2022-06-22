@@ -22,6 +22,8 @@
             <th>Check Out</th>
             <th>Tipe</th>
             <th>Jumlah</th>
+            <th>Harga</th>
+            <th>Update</th>
          </tr>
       <?php
          while ($user_data = mysqli_fetch_array($select)) {
@@ -32,11 +34,14 @@
                echo "<td>" . $user_data['pulang'] . "</td>";
                echo "<td>" . $user_data['tipe'] . "</td>";
                echo "<td>" . $user_data['jumlah'] . "</td>";
-               echo "<td> <a href='edit.php?id=$user_data[id]'>Edit</a></td></tr>";
+               echo "<td>" . "Rp" .  $user_data['harga'] . "</td>";
+               echo "<td> <a href='update.php?id=$user_data[id]'>Edit</a> | <a href='delete.php?id=$user_data[id]'>Delete</a></td></tr>";
          }
       ?>
       </table>
    </section>
+
+   <p>total : <?php echo mysqli_num_rows($select) ?> </p>
 
    <button>
       <a href="create.php">
