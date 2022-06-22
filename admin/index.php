@@ -64,7 +64,7 @@
       </table>
    </section>
 
-   <p class="text-xl">Total Booked: <?php echo mysqli_num_rows($select) ?> </p>
+   <p class="text-xl text-center my-2 text-purple-500 font-semibold">Total Booked: <?php echo mysqli_num_rows($select) ?> </p>
 
    <button class="flex justify-center mx-auto">
       <a href="create.php" class="flex flex-row w-36 p-2 bg-purple-500 hover:bg-purple-600 text-white text-center font-bold justify-around rounded-md">

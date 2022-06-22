@@ -7,7 +7,7 @@
       <script src="https://cdn.tailwindcss.com"></script>
       <!-- <script src="https://unpkg.com/flowbite@1.4.7/dist/datepicker.js"></script> -->
    </head>
-<body class="">
+<body>
    
    <section class="flex flex-row justify-center h-screen">
       <form action="book.php" method="post" name="create_form" autocomplete="on" class="my-auto" >
@@ -50,7 +50,7 @@
             
             <label for="date" class="font-semibold text-lg">Price :</label>
             <header class="mb-4">
-               <input type="number" name="harga" placeholder="Rp1.000.000" class="border p-2 bg-gray-100 w-full border-slate-300 rounded" maxlength="15" minlength="3" required>
+               <input type="number" name="harga" placeholder="Rp1.000.000" class="border p-2 bg-gray-100 w-full border-slate-300 rounded" min="0" required>
             </header>
 
             <header>
