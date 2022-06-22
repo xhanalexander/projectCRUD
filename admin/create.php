@@ -4,11 +4,12 @@
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title>Add new Book</title>
+      <script src="https://cdn.tailwindcss.com"></script>
    </head>
 <body>
-   <h1>New book</h1>
+   <h1 class="text-3xl font-semibold">New book</h1>
 
-   <section>
+   <section class="">
       <form action="book.php" method="post" name="create_form" autocomplete="on" >
          <main>
             <div>
@@ -46,10 +47,8 @@
             <header>
                <input type="submit" name="booking" value="book">
             </header>
-
          </main>
       </form>
-
    </section>
    
 </body>
