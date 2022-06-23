@@ -7,7 +7,7 @@
       <script src="https://cdn.tailwindcss.com"></script>
       <!-- <script src="https://unpkg.com/flowbite@1.4.7/dist/datepicker.js"></script> -->
    </head>
-<body>
+<body class="bg-gray-100">
    
    <section class="flex flex-row justify-center h-screen">
       <form action="book.php" method="post" name="create_form" autocomplete="on" class="my-auto" >
@@ -20,20 +20,20 @@
             <label for="nama" class="font-semibold text-lg">Guest Name :</label>
             <header class="mb-4">
                <input type="text" name="nama" placeholder="John Appleseed" 
-                  class="border p-2 w-full border-slate-300 bg-gray-100 rounded" 
+                  class="border p-2 w-full border-slate-300 bg-white rounded" 
                   maxlength="15" minlength="3" required>
             </header>
 
             <label for="date" class="font-semibold text-lg">Date Book :</label>
             <header class="mb-4">
-               <input type="date" name="datang" class="border p-2 bg-gray-100 border-slate-300 rounded" required >
+               <input type="date" name="datang" class="border p-2 bg-white border-slate-300 rounded" required >
                <span class="mx-4">To</span>
-               <input type="date" name="pulang" class="border p-2 bg-gray-100 border-slate-300 rounded" required>
+               <input type="date" name="pulang" class="border p-2 bg-white border-slate-300 rounded" required>
             </header>
             
             <label for="date" class="font-semibold text-lg">Room Type :</label>
             <header class="mb-4">
-               <select name="tipe" class="border w-full p-2 bg-gray-100 border-slate-200 rounded" required>
+               <select name="tipe" class="border w-full p-2 bg-white border-slate-200 rounded" required>
                   <option value="Regular Room">Regular Room</option>
                   <option value="Senior Room">Senior Room</option>
                   <option value="Deluxe Room">Deluxe Room</option>
@@ -45,12 +45,12 @@
             
             <label for="date" class="font-semibold text-lg">Guest People :</label>
             <header class="mb-4">
-               <input type="number" name="jumlah" class="border p-2 bg-gray-100 w-full border-slate-300 rounded" placeholder="1 Guest" required>
+               <input type="number" name="jumlah" class="border p-2 bg-white w-full border-slate-300 rounded" placeholder="1 Guest" min="0" required>
             </header>
             
             <label for="date" class="font-semibold text-lg">Price :</label>
             <header class="mb-4">
-               <input type="number" name="harga" placeholder="Rp1.000.000" class="border p-2 bg-gray-100 w-full border-slate-300 rounded" min="0" required>
+               <input type="number" name="harga" placeholder="Rp1.000.000" class="border p-2 bg-white w-full border-slate-300 rounded" min="0" required>
             </header>
 
             <header>
