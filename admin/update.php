@@ -42,21 +42,21 @@
             <label for="nama" class="font-semibold text-lg">Guest Name :</label>
             <header class="mb-4">
                <input type="text" name="nama" placeholder="John Appleseed" 
-               class="border p-2 w-full border-slate-300 bg-white rounded"
+               class="border p-2 w-full border-slate-300 bg-white rounded focus:outline-none focus:ring-1 focus:border-purple-500 focus:ring-purple-500"
                value="<?php echo $customer['nama'] ?>" maxlength="15" minlength="3" required>
             </header>
             
             <label for="date" class="font-semibold text-lg">Date Book :</label>
             <header class="mb-4">
-               <input type="date" name="datang" class="border p-2 bg-white border-slate-300 rounded" value="<?php echo $customer['datang'] ?>" required>
+               <input type="date" name="datang" class="border p-2 bg-white border-slate-300 rounded focus:outline-none focus:ring-1 focus:border-purple-500 focus:ring-purple-500" value="<?php echo $customer['datang'] ?>" required>
                <span class="mx-4">To</span>
-               <input type="date" name="pulang" class="border p-2 bg-white border-slate-300 rounded" value="<?php echo $customer['pulang'] ?>" required>
+               <input type="date" name="pulang" class="border p-2 bg-white border-slate-300 rounded focus:outline-none focus:ring-1 focus:border-purple-500 focus:ring-purple-500" value="<?php echo $customer['pulang'] ?>" required>
             </header>
 
             <label for="date" class="font-semibold text-lg">Room Type :</label>
             <header class="mb-4">
                <?php $type = $customer['tipe'] ?>
-               <select name="tipe" class="border w-full p-2 bg-white border-slate-200 rounded" required>
+               <select name="tipe" class="border w-full p-2 bg-white border-slate-200 rounded focus:outline-none focus:ring-1 focus:border-purple-500 focus:ring-purple-500" required>
                   <option <?php echo ($type == "Regular Room") ? "selected": "" ?> >Regular Room</option>
                   <option <?php echo ($type == "Senior Room") ? "selected": "" ?> >Senior Room</option>
                   <option <?php echo ($type == "Deluxe Room") ? "selected": "" ?> >Deluxe Room</option>
@@ -68,13 +68,13 @@
 
             <label for="date" class="font-semibold text-lg">Guest People :</label>
             <header class="mb-4">
-               <input type="number" name="jumlah" class="border p-2 bg-white w-full border-slate-300 rounded"
+               <input type="number" name="jumlah" class="border p-2 bg-white w-full border-slate-300 rounded focus:outline-none focus:ring-1 focus:border-purple-500 focus:ring-purple-500"
                 value="<?php echo $customer['jumlah'] ?>" required>
             </header>
             
             <label for="date" class="font-semibold text-lg">Price :</label>
             <header class="mb-4">
-               <input type="text" name="harga" placeholder="Rp1.000.000" class="border p-2 bg-white w-full border-slate-300 rounded"
+               <input type="text" name="harga" placeholder="Rp1.000.000" class="border p-2 bg-white w-full border-slate-300 rounded focus:outline-none focus:ring-1 focus:border-purple-500 focus:ring-purple-500"
                value="<?php echo $customer['harga'] ?>" maxlength="15" minlength="3" required>
             </header>
             
