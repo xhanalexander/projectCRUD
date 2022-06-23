@@ -3,25 +3,30 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>login hotel</title>
+   <script src="https://cdn.tailwindcss.com"></script>
+   <title>login Data Inn</title>
 </head>
-<body>
-   <section>
+<body class="bg-gray-100">
 
-   <form action="login.php" method="POST" autocomplete="on">
-      <div>
-         <div>
-            <h1>Log in Inn</h1>
+   <section class="flex justify-center h-screen">
+      <form action="login.php" method="POST" autocomplete="on" class="m-auto">
+         <div class="flex flex-col py-12 px-12 bg-white rounded-2xl shadow-xl z-20 content-center">
+
+            <div>
+               <h1 class="text-3xl font-bold text-center mb-4">Log in Inn</h1>
+            </div>
+
+            <div class="space-y-4">
+               <input type="text" name="username" class="block bg-gray-100 text-sm py-3 px-4 rounded-lg w-full border border-slate-100 outline-none" placeholder="Username" required/>
+               <input type="password" name="password" class="block bg-gray-100 text-sm py-3 px-4 rounded-lg w-full border border-slate-100 outline-none" placeholder="Password" required/>
+            </div>
+
+            <div class="text-center mt-6">
+               <input type="submit" value="LOGIN" class="py-3 w-64 text-xl text-white bg-purple-400 rounded-2xl cursor-pointer hover:bg-purple-500">
+            </div>
+
          </div>
-         <div>
-            <input type="text" name="username" placeholder="Username" required/>
-            <input type="password" name="password" placeholder="Password" required/>
-         </div>
-         <div>
-            <input type="submit" value="LOGIN">
-         </div>
-      </div>
-   </form>
+      </form>
 
    </section>
    
