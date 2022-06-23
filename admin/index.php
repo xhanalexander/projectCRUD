@@ -18,12 +18,7 @@
       <title>Inn Booking</title>
       <script src="https://cdn.tailwindcss.com"></script>
    </head>
-<body class="">
-
-   <!-- <nav class="flex flex-row">
-      <h1 class="text-3xl font-semibold">Inn Booking</h1>
-      <a href="logout.php">logout</a>
-   </nav> -->
+<body>
    
    <nav class="flex flex-row h-16 bg-white justify-between drop-shadow-md w-full ">
       <div class="flex">
