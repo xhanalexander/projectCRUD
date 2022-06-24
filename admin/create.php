@@ -14,7 +14,7 @@
          <main>
             <div class="mb-8">
                <h1 class="text-3xl font-semibold text-center">New book</h1>
-               <h3 class="text-xl text-center">add new guest room</h3>
+               <h3 class="text-xl text-center text-slate-500">Add new guest room</h3>
             </div>
             
             <label for="nama" class="font-semibold text-lg">Guest Name :</label>
