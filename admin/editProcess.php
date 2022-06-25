@@ -14,7 +14,7 @@
       $query = mysqli_query($db, $sql);
 
       if ($query) {
-         header("Location: index.php");
+         echo " <script> alert('Data Berhasil Diubah'); document.location.href = 'index.php'; </script>";
       } else {
          die("Gagal menyimpan perubahan!");
       }

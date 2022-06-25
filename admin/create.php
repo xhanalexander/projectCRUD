@@ -45,7 +45,7 @@
             
             <label for="date" class="font-semibold text-lg">Guest People :</label>
             <header class="mb-4">
-               <input type="number" name="jumlah" class="border p-2 bg-white w-full border-slate-300 rounded focus:outline-none focus:ring-1 focus:border-purple-500 focus:ring-purple-500" placeholder="1 Guest" min="0" required>
+               <input type="number" name="jumlah" class="border p-2 bg-white w-full border-slate-300 rounded focus:outline-none focus:ring-1 focus:border-purple-500 focus:ring-purple-500" placeholder="1 Guest" min="1" required>
             </header>
             
             <label for="date" class="font-semibold text-lg">Price :</label>

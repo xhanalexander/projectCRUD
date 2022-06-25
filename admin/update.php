@@ -1,5 +1,3 @@
-<!-- di edit.php ada hapus.php  -->
-
 <?php
    include("configuration.php");
 
@@ -25,7 +23,7 @@
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <script src="https://cdn.tailwindcss.com"></script>
-   <title>edit & delete</title>
+   <title>edit booking</title>
 </head>
 <body class="bg-gray-100">
 
@@ -34,7 +32,7 @@
          <main>
             <div class="mb-8">
                <h1 class="text-3xl font-semibold text-center">Edit book</h1>
-               <h3 class="text-xl text-center">edit guest room</h3>
+               <h3 class="text-xl text-center text-slate-500">edit guest appointment</h3>
             </div>
 
             <input type="hidden" name="id" value="<?php echo $customer['id'] ?>">
@@ -69,7 +67,7 @@
             <label for="date" class="font-semibold text-lg">Guest People :</label>
             <header class="mb-4">
                <input type="number" name="jumlah" class="border p-2 bg-white w-full border-slate-300 rounded focus:outline-none focus:ring-1 focus:border-purple-500 focus:ring-purple-500"
-                value="<?php echo $customer['jumlah'] ?>" required>
+                value="<?php echo $customer['jumlah'] ?>" min="1" required>
             </header>
             
             <label for="date" class="font-semibold text-lg">Price :</label>
