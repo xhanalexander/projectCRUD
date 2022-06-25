@@ -46,7 +46,7 @@
          </tr>
       <?php
          while ($user_data = mysqli_fetch_array($select)) {
-            echo "<tr class='odd:bg-purple-200 even:bg-white hover:bg-gray-300'>";
+            echo "<tr class='odd:bg-purple-200 even:bg-white hover:bg-purple-300 hover:text-white'>";
                // echo "<td class='py-2 font-semibold text-center '>" . $user_data['id'] . "</td>";
                echo "<td class='py-2 pl-4'>" . $user_data['nama'] . "</td>";
                echo "<td class='py-2 '>" . $user_data['datang'] . "</td>";
