@@ -22,7 +22,7 @@
    
    <nav class="flex flex-row h-16 bg-white justify-between drop-shadow-md w-full ">
       <div class="flex">
-         <h1 class="text-3xl font-semibold my-auto ml-4 ">Inn Booking 🏨🛏</h1>
+         <h1 class="text-3xl font-semibold my-auto ml-4 ">Inn Booking DashBoard 🏨🛏</h1>
       </div>
 
       <div class="flex mr-6">
