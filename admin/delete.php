@@ -7,7 +7,7 @@
       $query = mysqli_query($db, $sql);
 
       if ($query) {
-         header("Location: index.php");
+         echo " <script> alert('Data berhasil terhapus!'); document.location.href = 'index.php'; </script>";
       } else {
          die("Failed to delete...");
       }

@@ -14,7 +14,7 @@
       $_SESSION['status'] = "login";
       header("location:admin/index.php");
    } else {
-      header("location:index.php");
+      echo " <script> alert('Salah Username atau password!'); document.location.href = 'index.php'; </script>";
    }
 
 ?>

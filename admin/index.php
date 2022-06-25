@@ -6,7 +6,7 @@
 <?php
    session_start();
    if($_SESSION['status']!="login"){
-      header("location:../login.php?pesan=belum_login");
+      echo " <script> alert('Anda harus login terlebih dahulu!'); document.location.href = '../index.php'; </script>";
    }
 ?>
 
