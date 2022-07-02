@@ -19,9 +19,9 @@
             </div>
 
             <div class="space-y-4">
-               <input type="text" name="username" min="5" 
+               <input type="text" name="username" min="3" 
                   class="block bg-gray-100 text-sm text-slate-500 py-3 px-4 rounded-lg w-full border border-slate-100 outline-none focus:outline-none focus:ring-1 focus:border-purple-500 focus:ring-purple-500" placeholder="Username" required/>
-               <input type="password" name="password" 
+               <input type="password" name="password"
                   class="block bg-gray-100 text-sm text-slate-500 py-3 px-4 rounded-lg w-full border border-slate-100 outline-none focus:outline-none focus:ring-1 focus:border-purple-500 focus:ring-purple-500" placeholder="Password" required/>
             </div>
 
